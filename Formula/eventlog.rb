@@ -1,25 +1,25 @@
 class Eventlog < Formula
-  desc "The eventlog application"
+  desc "Append-only JSONL coordination log for multi-agent repos: one controller writes, reactors act on events"
   homepage "https://github.com/radiator-engineering/eventlog"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.1.0/eventlog-aarch64-apple-darwin.tar.xz"
-      sha256 "7a6667249ad83bd1065359b8ccf2387e54dede4112449a8408b49b8c8c8327f4"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.2.0/eventlog-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c0ba519945b47b45b4e32b543f8d71ffd868ad567cd9c7d39d01553ab59315dc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.1.0/eventlog-x86_64-apple-darwin.tar.xz"
-      sha256 "5c7b3ed9068d30a3aac63afdb00d8c07d02aff757358a7d5a5047645538fade5"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.2.0/eventlog-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "d484b30c1d7290fb839d679fe9a94bc43bac09333df2dab211a113c827c1740f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.1.0/eventlog-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "84e2779852999d3f19286294a1c15e08ecd996be30805d5978de05bec730efa4"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.2.0/eventlog-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "222962e750beed6b1afd6312c5b357263081c8e76e253f2b738c748cc53b2efb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.1.0/eventlog-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7017e70274061aaa0fc5454c4c6426c1eb06bd02da2c1cc46e4dfc1453df8df1"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.2.0/eventlog-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1cd94d47b43c19be047f292c24c67f6548a41c64031660a5969b6bd144ee8265"
     end
   end
   license "Apache-2.0"
