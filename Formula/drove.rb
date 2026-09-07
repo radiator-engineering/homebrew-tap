@@ -1,25 +1,25 @@
 class Drove < Formula
   desc "Versioned, declarative agent workspaces"
   homepage "https://github.com/radiator-engineering/Drove"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.1/drove-aarch64-apple-darwin.tar.xz"
-      sha256 "2fc9b11e92a8ee9f85c3a8783ba70ddadfd0129d19d21f64c7286367b981baa2"
+      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.2/drove-aarch64-apple-darwin.tar.xz"
+      sha256 "2e054fade943a9502ae1d1fac20019ca73cf5a125c8095d8f1e308f79f606b3f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.1/drove-x86_64-apple-darwin.tar.xz"
-      sha256 "44bc16f56c1a713516b90f3cbb4fd5d6eeed58aa4f10d334dd9457d529bd6a03"
+      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.2/drove-x86_64-apple-darwin.tar.xz"
+      sha256 "eb8164e13bfcc82064bfe99b476625a9f6d82c91776941048a97ea61935dfe50"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.1/drove-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c10d5816b9ee49eb25a26eca3c160d19fc29e2af8f8a920b13de389879c00e55"
+      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.2/drove-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8968afba6148926eeedc4c22be8221955590ea827691ebe2faf44d1ed7a59b7b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.1/drove-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "31a8e6322fec874f87a115ec7c53ed145c61dec72948703b2b0605e836fb2a35"
+      url "https://github.com/radiator-engineering/Drove/releases/download/v0.1.2/drove-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bbb0d4de3d9e243bea2c9207e83ed811085292563c5fd4dec09138c49f1f4b3e"
     end
   end
   license "Apache-2.0"
