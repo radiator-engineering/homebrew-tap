@@ -1,25 +1,25 @@
 class Eventlog < Formula
   desc "Append-only JSONL coordination log for multi-agent repos: one controller writes, reactors act on events"
   homepage "https://github.com/radiator-engineering/eventlog"
-  version "0.4.1"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.4.1/eventlog-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "8e5e9d9483e9c73953dbc216ed62a5d107396cac5916a47e266b7a3168ea39f6"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.0/eventlog-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "458ae45e33b6f740243694d18a056e414946bd0a35e5a9cf1b7ae12f4397a0cc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.4.1/eventlog-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "b472d3348a909f4ed064a39df081d3add8e4aab231606420540585f1dcdf6f74"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.0/eventlog-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "9a84cfa446322bcd5cf7fb5d81b1f71f6099b8dec74a2c643105adc4152df75b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.4.1/eventlog-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6f7292efe3a0e534549369a1be15a83889dff0bb7028f3804d91b0731375b8f1"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.0/eventlog-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5f206838caac0a8c30f6158e77b5e9da2e5ff62f1becdb780ec6f7492c97b88f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.4.1/eventlog-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e830ef594486296e6662a0581413a05861327ec25b79273c4f226a3d276a03d1"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.0/eventlog-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "476ee961a606703dc5c400ec7a7d16b5ca8b20945a0d2445a1b7250c4c14f0a7"
     end
   end
   license "Apache-2.0"
