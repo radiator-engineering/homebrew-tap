@@ -1,25 +1,25 @@
 class Eventlog < Formula
-  desc "Append-only JSONL coordination log for multi-agent repos: one controller writes, reactors act on events"
+  desc "Append-only JSONL coordination log for multi-agent repos: one controller writes, every agent reads"
   homepage "https://github.com/radiator-engineering/eventlog"
-  version "0.5.1"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.1/eventlog-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "0da139128e25887e290e79f266f3ec39267a02e6a6558c5463a20e00db7a62e5"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v1.0.0/eventlog-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "5ffe442e9af07e28d24a511cd735cfea6e1d7b34d3e75442c688934260615ef7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.1/eventlog-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "1138e4eac76f58850c61a4c3848b8b3b63e199ffab03999bd78a1dd8ef8ab417"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v1.0.0/eventlog-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "2b5aa8da0395367fd9b8e77ed5e4426b31b2f62603745f8ac2a0bbe6d7b8bfa3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.1/eventlog-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9452674d871bfd6b8d990ecd9e920a4c9e5c950494647fa8bd5b86085bdaa767"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v1.0.0/eventlog-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0209183b83c9c2651b4e981a08921148859c93d5213dfaad48c4a7d2d53536ce"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/radiator-engineering/eventlog/releases/download/v0.5.1/eventlog-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b72caf2ce67e48d7aebb4d0f16ef02a862e3bf2bcc390189720c147570934b48"
+      url "https://github.com/radiator-engineering/eventlog/releases/download/v1.0.0/eventlog-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e131b6335785bf846c35efa7f01d5afb7016f7d1e8f4a409f8288592dc7f8145"
     end
   end
   license "Apache-2.0"
